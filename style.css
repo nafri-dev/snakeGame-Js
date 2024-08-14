@@ -89,93 +89,83 @@ body,
   margin-top: -50px;
 }
 
-
-
 @media (max-width: 600px) {
-  
+ body {
+  flex-direction: column;
+  height: auto;
+  padding: 10px; 
+}
 
-  
-  
-  
-  body {
-    flex-direction: column;
-    height: auto;
-    padding: 10px; 
-  }
+#game-board {
+  grid-template-columns: repeat(20, 15px);
+  grid-template-rows: repeat(20, 15px);
+  margin: 5;
+} 
 
-  #game-board {
-    grid-template-columns: repeat(20, 15px);
-    grid-template-rows: repeat(20, 15px);
-    margin: 0;
-  } 
+.game-border-1 {
+  border-width: 6px;
+  border-radius: 20px;
+}
 
-  .game-border-1 {
-    border-width: 6px;
-    border-radius: 20px;
-  }
+.game-border-2 {
+  border-width: 5px;
+  border-radius: 16px;
+}
 
-  .game-border-2 {
-    border-width: 5px;
-    border-radius: 16px;
-  }
+.game-border-3 {
+  border-width: 20px;
+  border-radius: 12px;
+}
 
-  .game-border-3 {
-    border-width: 20px;
-    border-radius: 12px;
-  }
+#instruction-text {
+  top: 30%;
+  font-size: 13px;
+  padding: 20px;
+}
 
-  #instruction-text {
-    top: 32%;
-    font-size: 13px;
-    padding: 20px;
-  }
+#score,
+#highScore {
+  font-size: 24px;
+}
 
-  #score,
-  #highScore {
-    font-size: 24px;
-  }
-
-  #logo {
-    width: 100px;
-    height: auto;
-  }
+#logo {
+  width: 100px;
+  height: auto;
+}
 }
 
 @media (max-width: 400px) {
-
-  
-  
-  
-  #game-board {
-    grid-template-columns: repeat(15, 10px);
-    grid-template-rows: repeat(15, 10px);
-  }
-
-  .game-border-1 {
-    border-width: 4px;
-  }
-
-  .game-border-2 {
-    border-width: 3px;
-  }
-
-  .game-border-3 {
-    border-width: 10px;
-  }
-
-  #instruction-text {
-    top: 19%;
-    font-size: 6px;
-    padding: 10px;
-  }
-
-  #score,
-  #highScore {
-    font-size: 18px;
-  }
-
-  #logo {
-    width: 60px;
-    margin-top: 5px   ;
-  }
+#game-board {
+  grid-template-columns: repeat(15, 10px);
+  grid-template-rows: repeat(15, 10px);
 }
+
+.game-border-1 {
+  border-width: 4px;
+}
+
+.game-border-2 {
+  border-width: 3px;
+}
+
+.game-border-3 {
+  border-width: 10px;
+}
+
+#instruction-text {
+  top: 19%;
+  font-size: 6px;
+  padding: 10px;
+}
+
+#score,
+#highScore {
+  font-size: 18px;
+}
+
+#logo {
+  width: 60px;
+  margin-top: 5px;
+}
+}
+ 
