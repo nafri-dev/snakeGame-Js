@@ -99,6 +99,7 @@ function move() {
 }
 
 function startGame() {
+  if(!gameStarted){
   
     gameStarted = true;
     instructionText.style.display = 'none';
@@ -108,7 +109,7 @@ function startGame() {
       checkCollision();
       draw();
     }, gameSpeedDelay);
-  }
+  }}
 
 
 function handleKeyPress(event) {
