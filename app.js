@@ -99,7 +99,7 @@ function move() {
 }
 
 function startGame() {
-  if (!gameStarted) {
+  
     gameStarted = true;
     instructionText.style.display = 'none';
     logo.style.display = 'none';
@@ -109,7 +109,7 @@ function startGame() {
       draw();
     }, gameSpeedDelay);
   }
-}
+
 
 function handleKeyPress(event) {
   if (
@@ -208,10 +208,7 @@ function resetGame() {
   direction = 'right';
   gameSpeedDelay = 200;
   updateScore();
-
 }
-  
-
 
 function updateScore() {
   const currentScore = snake.length - 1;
